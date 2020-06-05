@@ -45,4 +45,5 @@ body {
   .active {
     background-color: rgb(117, 117, 117);
     color: white;
+    width: 80px;
   }

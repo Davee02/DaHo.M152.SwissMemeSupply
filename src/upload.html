@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
     <script src="nav.js"></script>
     <title>SwissMemeSupply</title>
 </head>
 <body>
     <div class="topnav">
-        <a href="#home" class="active">Logo</a>
+        <a href="overview.html" class="active">Logo</a>
         <div id="navLinks">
             <a href="overview.html">Overview</a>
             <a href="upload.html">Upload</a>
@@ -25,16 +26,20 @@
     <div>
         <h1>Memes</h1>
     
-        <button>Select Image</button>
+        <div class="upload-container">
+            <button class="side-by-side">Select Image</button>
+            <div class="upload-image-placeholder side-by-side"></div>
+        </div>
 
-        <label for="category-selection">Select Category:</label>
-        <select id="category-selection">
-            <option value="Boomer"></option>
-            <option value="video"></option>
-            <option value="picture"></option>
+        <select id="category-filter">
+            <option value="" disabled selected>Select category</option>
+            <option value="boomer">Boomer</option>
+            <option value="video">Video</option>
+            <option value="dank">Dank</option>
+            <option value="picture">Picture</option>
         </select>
         
-        <button>Upload</button>
+        <button class="main-action">Upload</button>
     </div>
 </body>
 </html>

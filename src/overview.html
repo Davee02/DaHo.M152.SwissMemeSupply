@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
     <script src="nav.js"></script>
     <title>SwissMemeSupply</title>
 </head>
 <body>
     <div class="topnav">
-        <a href="#home" class="active">Logo</a>
+        <a href="overview.html" class="active">Logo</a>
         <div id="navLinks">
             <a href="overview.html">Overview</a>
             <a href="upload.html">Upload</a>
@@ -25,17 +26,30 @@
     <div>
         <h1>Memes</h1>
     
-        <label for="category-filter">Filter category:</label>
         <select id="category-filter">
-            <option value="Boomer"></option>
-            <option value="video"></option>
-            <option value="picture"></option>
+            <option value="" disabled selected>Filter category</option>
+            <option value="boomer">Boomer</option>
+            <option value="video">Video</option>
+            <option value="dank">Dank</option>
+            <option value="picture">Picture</option>
         </select>
         
-        <img alt="meme">
-        <img alt="meme">
-        <img alt="meme">
-        <img alt="meme">
+        <div class="meme-container">
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+            <div class="meme-placeholder"></div>
+        </div>
+        
     </div>
 </body>
 </html>

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
     <script src="nav.js"></script>
     <title>SwissMemeSupply</title>
 </head>
 <body>
     <div class="topnav">
-        <a href="#home" class="active">Logo</a>
+        <a href="overview.html" class="active">Logo</a>
         <div id="navLinks">
             <a href="overview.html">Overview</a>
             <a href="upload.html">Upload</a>
@@ -21,14 +22,16 @@
         <a href="javascript:void(0);" class="icon" onclick="showBurger()">
             <i class="fa fa-bars"></i>
         </a>    
-    </div>
+    </div>    
     <div>
         <h1>Login</h1>
     
-        <input type="email" placeholder="E-Mail">
-        <input type="password" placeholder="Password">
-    
-        <button>Login</button>
+        <div class="login-container">
+            <input type="email" placeholder="E-Mail">
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button class="main-action">Login</button>
     </div>
 </body>
 </html>
