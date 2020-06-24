@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="nav.css">
-    <script src="nav.js"></script>
-    <title>SwissMemeSupply</title>
-</head>
-<body>
-    <div class="topnav">
-        <a href="overview.html" class="active">Logo</a>
-        <div id="navLinks">
-            <a href="overview.html">Overview</a>
-            <a href="upload.html">Upload</a>
-            <a href="about.html">About</a>
-            <a href="login.html">Login</a>
-            <a href="myAccount.html">My Account</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="nav.js"></script>
+        <title>SwissMemeSupply</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="overview.html" class="active">
+                <img
+                    src="assets/logo.svg"
+                    alt="SwissMemeSupply Logo"
+                    class="logo"
+                />
+            </a>
+            <div id="navLinks">
+                <a href="overview.html">Overview</a>
+                <a href="upload.html">Upload</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="myAccount.html">My Account</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="showBurger()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="showBurger()">
-            <i class="fa fa-bars"></i>
-        </a>    
-    </div>
-    <div>
-        <h1>What are Memes?</h1>
-    
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    </div>
-</body>
+        <div>
+            <h1>What are Memes?</h1>
+
+            <p>
+                A meme is a virally transmitted image embellished with text,
+                usually sharing pointed commentary on cultural symbols, social
+                ideas, or current events. A meme is typically a photo or video,
+                although sometimes it can be a block of text. When a meme
+                resonates with many people, it's spread via social platforms
+                like Twitter, Facebook, Instagram, texting, and more. The more a
+                meme is spread, the greater the cultural influence it has.
+            </p>
+            <p>
+                The following two guys created the first memes in existence.
+                They're also called the "meme lords". Next to it is one of the
+                first "meme" they shared.
+            </p>
+            <img
+                src="assets/meme_lords.jpg"
+                alt="Picture of the two meme lords"
+                class="meme-lords"
+            />
+            <video controls class="first-meme">
+                <source src="assets/meme_2.mp4" type="video/mp4" />
+                <p>
+                    Your browser doesn't support HTML5 video. Here is a
+                    <a href="assets/meme_2.mp4">link to the video</a> instead.
+                </p>
+            </video>
+        </div>
+    </body>
 </html>

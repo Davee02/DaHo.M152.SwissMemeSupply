@@ -62,14 +62,6 @@ div.login-container > input {
     margin-bottom: 15px;
 }
 
-img.meme-lords {
-    width: 50%;
-}
-
-video.first-meme {
-    width: 45%;
-}
-
 @media only screen and (min-width: 768px) {
     div.meme-placeholder {
         width: 200px;
@@ -94,14 +86,6 @@ video.first-meme {
         margin-bottom: 20px;
         width: 50%;
     }
-
-    img.meme-lords {
-        width: 30%;
-    }
-
-    video.first-meme {
-        width: 30%;
-    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -119,13 +103,5 @@ video.first-meme {
 @media only screen and (min-width: 1200px) {
     div.meme-container {
         grid-template-columns: auto auto auto auto auto;
-    }
-
-    img.meme-lords {
-        width: 10%;
-    }
-
-    video.first-meme {
-        width: 10%;
     }
 }
