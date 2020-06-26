@@ -1,8 +1,9 @@
-function showBurger() {
-  var x = document.getElementById("navLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+
+const burger = document.getElementById('burger');
+const nav = document.querySelector('.nav');
+
+function toggleNav() {
+    burger.classList.toggle('fa-bars');
+    burger.classList.toggle('fa-times');
+    nav.classList.toggle('nav-active');
 }

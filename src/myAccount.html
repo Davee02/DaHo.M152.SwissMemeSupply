@@ -3,35 +3,30 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <link rel="stylesheet" href="nav.css" />
         <link rel="stylesheet" href="style.css" />
-        <script src="nav.js"></script>
+        
         <title>SwissMemeSupply</title>
     </head>
     <body>
-        <div class="topnav">
-            <a href="overview.html" class="active">
-                <img
-                    src="assets/logo.svg"
-                    alt="SwissMemeSupply Logo"
-                    class="logo"
-                />
+        <header>
+            <a class="logo" href="overview.html">
+                <img src="assets/logo.svg" alt="SwissMemeSupply Logo"
+                class="logo-image" width="100px" height="100px">
+                <h2 class="logo-text">SwissMemeSupply</h2>
             </a>
-            <div id="navLinks">
-                <a href="overview.html">Overview</a>
-                <a href="upload.html">Upload</a>
-                <a href="about.html">About</a>
-                <a href="login.html">Login</a>
-                <a href="myAccount.html">My Account</a>
+            <ul class="nav">
+                <li class="navlink"><a href="overview.html">Overview</a></li>
+                <li class="navlink"><a href="upload.html">Upload</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="myAccount.html">My Account</a></li>
+                <li class="navlink"><a href="login.html">Login</a></li>
+            </ul>
+            <div class="burger" onclick="toggleNav()">
+                <i id="burger" class="fas fa-bars"></i>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="showBurger()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        </header>
         <div>
             <h1>My Account</h1>
 
@@ -45,4 +40,5 @@
             <button class="main-action">Save</button>
         </div>
     </body>
+    <script src="nav.js"></script>
 </html>
