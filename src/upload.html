@@ -32,7 +32,8 @@
             <h1>Memes</h1>
 
             <div class="upload-container">
-                <button class="side-by-side">Select Image</button>
+                <button class="side-by-side" onclick="document.getElementById('file-input').click()">Select Image...</button>
+                <input id="file-input" type="file" accept=".jpg, .jpeg, .png, .mp4" style="display: none;">
                 <img src="assets/meme_12.jpg" alt="Uploaded Meme" class="upload-image-placeholder side-by-side"></img>
             </div>
 
