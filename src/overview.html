@@ -27,16 +27,18 @@
                 <i id="burger" class="fas fa-bars"></i>
             </div>
         </header>
-        <div>
+        <div class="page-content">
             <h1>Memes</h1>
 
-            <select id="category-filter">
-                <option value="" disabled selected>Filter category</option>
-                <option value="boomer">Boomer</option>
-                <option value="video">Video</option>
-                <option value="dank">Dank</option>
-                <option value="picture">Picture</option>
-            </select>
+            <div class="custom-select">
+                <select id="category-filter">
+                    <option value="" disabled selected>Filter category</option>
+                    <option value="boomer">Boomer</option>
+                    <option value="video">Video</option>
+                    <option value="dank">Dank</option>
+                    <option value="picture">Picture</option>
+                </select>
+            </div>
 
             <div class="meme-container">
                 <div class="meme-placeholder"></div>
@@ -56,4 +58,5 @@
         </div>
     </body>
     <script src="nav.js"></script>
+    <script src="select.js"></script>
 </html>

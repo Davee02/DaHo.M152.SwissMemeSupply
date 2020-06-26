@@ -27,12 +27,18 @@
                 <i id="burger" class="fas fa-bars"></i>
             </div>
         </header>
-        <div>
+        <div  class="page-content">
             <h1>Login</h1>
 
             <div class="login-container">
-                <input type="email" placeholder="E-Mail" />
-                <input type="password" placeholder="Password" />
+                <div class="input-pair">
+                    <input id="email" type="email" placeholder="E-Mail" class="form-input"/>
+                    <label for="email" class="form-label">Email</label>
+                </div>
+                <div class="input-pair">
+                    <input id="password" type="password" placeholder="Password" class="form-input"/>
+                    <label for="password" class="form-label">Password</label>
+                </div>
             </div>
 
             <button class="main-action">Login</button>

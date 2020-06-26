@@ -43,12 +43,79 @@ input#username {
     width: 90%;
 }
 
+div.input-pair {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+input.form-input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #343434;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+input.form-input::placeholder {
+    color: transparent;
+}
+
+input.form-input:placeholder-shown ~ label.form-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+input.form-input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #FFD33B, #FFDD1B);
+	 border-image-slice: 1;
+}
+
+input.form-input:focus ~ label.form-label {
+    position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #FFD33B;
+	 font-weight: 700;
+}
+
+input.form-input:required, input.form-input:invalid {
+    box-shadow: none;
+}
+
+label.form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #343434;
+}
+
+
 button.main-action {
     width: 130px;
     height: 60px;
     position: absolute;
     bottom: 30px;
     left: 30px;
+    background-color: #FFD33B;
+    border-color: #FFD33B;
+}
+
+button.main-action:hover {
+    background-color: #FFDD1B;
+    border-color: #FFDD1B;
 }
 
 div.upload-container {
@@ -68,6 +135,90 @@ img.meme-lords {
 
 video.first-meme {
     width: 45%;
+}
+
+.page-content {
+    margin: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #808080;
+    background-color: #808080;
+    color: white;
+}
+
+button:hover {
+    border-color: #606060;
+    background-color: #606060;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: gray;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #FFDD1B;
+  }
+
+@media only screen and (max-width: 500px) {
+    h2.logo-text {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
