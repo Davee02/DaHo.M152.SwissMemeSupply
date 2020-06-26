@@ -161,7 +161,7 @@ button:hover {
 
 .custom-select {
     position: relative;
-    font-family: Arial;
+    width: 50%;
   }
   
   .custom-select select {
@@ -215,7 +215,7 @@ button:hover {
     background-color: #FFDD1B;
   }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
     h2.logo-text {
         display: none;
     }
